@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 
 import Books from '../components/Books';
+import NewBook from '../components/NewBook';
 
 const RoutesBook = () => {
   return (
@@ -14,6 +15,10 @@ const RoutesBook = () => {
         <Route
           path="/booksAPI"
           element={<Books/>}
+        />
+        <Route
+          path="/new_book"
+          element={<NewBook/>}
         />
       </Routes>
     </BrowserRouter>
